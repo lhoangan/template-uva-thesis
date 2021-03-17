@@ -1,0 +1,91 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass[dsingle]{Dissertate}
+
+\usepackage[vietnamese,english]{babel}
+\usepackage{hhline}
+\usepackage{subcaption}
+%\usepackage{showframe}
+% Include other packages here, before hyperref.
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{eqparbox}
+\usepackage{sidecap}
+\usepackage[labelfont=bf]{caption}
+\usepackage[labelfont=it,textfont={it},justification=centering]{subcaption}
+\usepackage{comment}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+
+\usepackage{xcolor}
+
+\usepackage[export]{adjustbox}
+%\usepackage{lipsum}
+\usepackage{pgf}
+\usepackage{rotating,multirow}
+\newcommand*\rot{\rotatebox{90}}
+
+\usepackage{tikz}
+\usepackage{cases}
+%\usepackage{subfigure}
+
+
+
+
+\renewcommand{\algorithmiccomment}[1]{\hfill\eqparbox{COMMENT}{\# #1}}
+% https://stackoverflow.com/questions/1744197/formatting-comments-in-latexs-algorithmic-environment
+
+
+
+\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+
+\def\-{\raisebox{.75pt}{-}}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+
+
+\begin{document}
+
+% the front matter
+\input{frontmatter/personalize}
+    \frontmatter
+    \setstretch{\dnormalspacing}
+
+    \AddLabels % for chapterthumbs
+    \graphicspath{{figures/}}
+
+\pagestyle{fancy}
+\fancyhead[LO,RE]{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+
+\renewcommand\chaptermark[1]{\markboth{\MakeUppercase{\thechapter. #1}}{\MakeUppercase{\thechapter. \small #1}}}
+%\renewcommand\sectionmark[1]{\markright{#1}}
+
+\include{chapters/0_introduction}
+\include{chapters/1_chapter2}
+
+\RemoveLabels
+
+\setstretch{\dnormalspacing}
+
+\backmatter
+
+\end{document}
