@@ -1,4 +1,29 @@
 %!TEX root = ../dissertation.tex
 % the acknowledgments section
 
-Acknowledgement
+
+\normalsize
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+  \chapterheadstartvskip%
+  {\size@chapter{\sectfont\raggedleft
+    {%\chapnumfont
+    \vspace{2em}
+      \ifnum \c@secnumdepth >\m@ne%
+        \if@mainmatter\thechapter\else\phantom{\thechapter}%
+      \fi\else\phantom{\thechapter}\fi
+      \par\nobreak}%
+    {\raggedleft\advance\leftmargin10em\interlinepenalty\@M #1\par}}
+  \nobreak\chapterheadendvskip}}
+\makeatother
+
+\begin{savequote}[85mm]
+Faithful friends are a sturdy shelter; whoever finds one finds a treasure. \\
+Faithful friends are beyond price, no amount can balance their worth.
+\qauthor{Sirach 6:14--15}
+\end{savequote}
+
+\chapter*{Acknowledgments}
+
+Here goes my acknowledgement to everyone who have been greatly instrumental to the realization of my thesis.

@@ -78,14 +78,14 @@
 %            margin=2cm]{geometry}
 \RequirePackage[
             % a4paper,
-            paperwidth=176mm,
-            paperheight=246mm,
-            layoutwidth=170mm,
-            layoutheight=240mm,
-            layouthoffset=3mm,
-            layoutvoffset=3mm,
-            showcrop,
-            margin=20mm
+            paperwidth=176mm,  % full page width (content + 2 real margins + 2 horizontal bleeding margins)
+            paperheight=246mm, % full page height (content + 2 real margins + 2 vertical bleeding margins )
+            layoutwidth=170mm, % content width
+            layoutheight=240mm,% content height
+            layouthoffset=3mm, % single horizontal bleeding 
+            layoutvoffset=3mm, % single vertical bleeding margin
+            margin=20mm,
+            showcrop
             %includemp, % include margin notes
             %marginparwidth=4cm,
             %marginparsep=0.4cm
@@ -324,31 +324,26 @@ Numbers={Proportional}]{EB Garamond}
 \def\degreeterm#1{\gdef\@degreeterm{#1}}
 % School name and location
 
-% =========================================
-% COLOR SET #1: HAVARD COLOR
-% School color found from university's graphic identity site:
-% http://isites.harvard.edu/icb/icb.do?keyword=k75408&pageid=icb.page392732
-%\definecolor{SchoolColor}{rgb}{0.6471, 0.1098, 0.1882} % Crimson
-%\definecolor{chaptergrey}{rgb}{0.6471, 0.1098, 0.1882} % for chapter numbers
+%% =========================================
+%% School color found from university's graphic identity site:
 
-% =========================================
-% COLOR SET #1: BEKERLY COLOR
-% The lower command will take effect
-\definecolor{SchoolColor}{HTML}{FDB515}     %berkeley gold   
-\definecolor{SchoolColor}{HTML}{003262} %    berkeley blue 
-\definecolor{SchoolColor}{rgb}{0, 0.19608, 0.3843} %berkeley blue 
-\definecolor{chaptergrey}{rgb}{0, 0.19608, 0.3843} % chapter numbers             
-
-% =======================================
-% COLOR SET #2: PRINCETON COLOR
-\definecolor{SchoolColor}{rgb}{0.9608, 0.5020, 0.1451}
-\definecolor{chaptergrey}{rgb}{0.9608, 0.5020, 0.1451} 
-
-% ==================
-% COLOR SET #3: NYU COLOR
-\definecolor{SchoolColor}{rgb}{0.3412, 0.0235, 0.5490} % purple 
-\definecolor{chaptergrey}{rgb}{0.2600, 0.0200, 0.4600} % dialed back a little   
-\definecolor{midgrey}{rgb}{0.4, 0.4, 0.4}
+%% COLOR SET #1: BEKERLY COLOR
+%% The lower command will take effect
+%\definecolor{SchoolColor}{HTML}{FDB515}     %berkeley gold   
+%\definecolor{SchoolColor}{HTML}{003262} %    berkeley blue 
+%\definecolor{SchoolColor}{rgb}{0, 0.19608, 0.3843} %berkeley blue 
+%\definecolor{chaptergrey}{rgb}{0, 0.19608, 0.3843} % chapter numbers             
+%
+%% =======================================
+%% COLOR SET #2: PRINCETON COLOR
+%\definecolor{SchoolColor}{rgb}{0.9608, 0.5020, 0.1451}
+%\definecolor{chaptergrey}{rgb}{0.9608, 0.5020, 0.1451} 
+%
+%% ==================
+%% COLOR SET #3: NYU COLOR
+%\definecolor{SchoolColor}{rgb}{0.3412, 0.0235, 0.5490} % purple 
+%\definecolor{chaptergrey}{rgb}{0.2600, 0.0200, 0.4600} % dialed back a little   
+%\definecolor{midgrey}{rgb}{0.4, 0.4, 0.4}
 
 %\renewcommand*{\chapnumfont}{%
 %  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{90}{117}\selectfont% Default: 100/130
@@ -520,7 +515,6 @@ Numbers={Proportional}]{EB Garamond}
 }
 
 \newcommand{\acknowledgments}{
-	\chapter*{Acknowledgments}
     \addcontentsline{toc}{chapter}{Acknowledgements}
     %\pdfbookmark{Acknowledgements}{Acknowledgements}
 	\noindent
@@ -533,10 +527,8 @@ Numbers={Proportional}]{EB Garamond}
 
 
 \renewcommand{\backmatter}{
-    \input{endmatter/personalize}
-    \clearpage
     \begin{spacing}{\dcompressedspacing}
-        \bibliography{UvA}
+        \bibliography{my_bibs}
         \addcontentsline{toc}{chapter}{Bibliography}
         \pdfbookmark{Bibliography}{Bibliography}
         \bibliographystyle{ieeetr}
