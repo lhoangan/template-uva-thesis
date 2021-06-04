@@ -8,7 +8,7 @@ Template for PhD thesis with customized title page conforming to requirement fro
 - Chapter abstracts begin with [initials, aka drop cap](https://en.wikipedia.org/wiki/Initial) (using `lettrine` package)
 - Each chapter contains a [thumb index](https://en.wikipedia.org/wiki/Thumb_index) that displaces one after another chapter. The thumb indices extend to the bleeding margin of the page show the marks will show up after cut.
 
-**Disclaimer** The University of Amsterdam does not seem to dictate a fix template for phd theses, except for the title page. Although the template has been used to format [my thesis](http://hdl.handle.net/11245.1/57c8d00a-9a32-4c96-a512-231dc6bb27df), it does not mean it is always conform to new regulations of the university. A certain elements that I'd seen from previous theses have been disapproved during my time. So always double check with the Office of the Beadle and up-to-date [documents and forms](https://www.uva.nl/en/research/phd/documents-and-forms/documents-and-forms.html).
+**Disclaimer**  Although the template has been used to format [my thesis](http://hdl.handle.net/11245.1/57c8d00a-9a32-4c96-a512-231dc6bb27df), it does not mean it is always conform to new regulations of the university. A certain elements that I'd seen from previous theses have been disapproved during my time. So always double check with the Office of the Beadle and up-to-date [documents and forms](https://www.uva.nl/en/research/phd/documents-and-forms/documents-and-forms.html).
 
 ## Getting started
 This project is run and compiled from [Overleaf](overleaf.com) using XeLaTeX (due to the personalized fonts).
