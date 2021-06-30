@@ -203,6 +203,9 @@ Numbers={Proportional}]{EB Garamond}
 \setlength\LabelWidth{1.5cm}
 \newlength\LabelHeight
 \setlength\LabelHeight{15pt}
+\newlength\LabelShift
+\setlength\LabelShift{25pt} % the space a chapterthumb in the next chapter is shifted down
+% (in principle should be the same as LabelHeight, but not really in reality)
 
 \AtBeginDocument{%
 \regtotcounter{chapter}
@@ -221,7 +224,7 @@ Numbers={Proportional}]{EB Garamond}
   angle=00,
   position={current page.east|-current page text area.north  east},
   hshift=-0.9cm,%11pt,
-  vshift=-\thechapter*\LabelHeight,
+  vshift=-\thechapter*\LabelShift,
   contents={%
   \tikz\node[fill=gray!30,anchor=west,text width=1.8cm,
     align=center,text height=\LabelHeight,text depth=10pt,font=\Large]{\thechapter\hspace{3mm}\hphantom{}};
@@ -232,7 +235,7 @@ Numbers={Proportional}]{EB Garamond}
   angle=00,
   position={current page.west|-current page text area.north west},
   hshift=0.9cm,%-11pt,
-  vshift=-\thechapter*\LabelHeight,
+  vshift=-\thechapter*\LabelShift,
   contents={%
   \tikz\node[fill=gray!30,anchor=west,text width=1.8cm,
     align=center,text height=\LabelHeight,text depth=10pt,font=\Large] {\hspace*{3mm}\thechapter};
