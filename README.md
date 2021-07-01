@@ -3,7 +3,8 @@
 Template for PhD thesis with customized title page conforming to requirement from the University of Amsterdam. This template has been used to format [my thesis](http://hdl.handle.net/11245.1/57c8d00a-9a32-4c96-a512-231dc6bb27df).
 
 ## Features
-- Title page conforming to the [requirement of UvA](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/appendix-b---model-title-page-for-doctoral-thesis-2018_27-09-2019.pdf)
+AFAIK, the University of Amsterdam (UvA) does not dictates a strict template for PhD theses, only the title page which will be given by the Office of the Beadle. The following features are made for my taste only, which hopefully are also interested by you.
+- Title page conforming to the [requirement of UvA](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/appendix-b---model-title-page-for-doctoral-thesis-2018_27-09-2019.pdf). Again the title page will be provided by the Office of the Beadle once the these defense is scheduled. This version is only meant to replicate that with some customization in style (font size and color). You can just take their version and attach to the compiled pdf as post-production for the ease of mind.
 - Each chapter starts with an [epigraph](https://en.wikipedia.org/wiki/Epigraph_(literature))
 - Chapter abstracts begin with [initials, aka drop cap](https://en.wikipedia.org/wiki/Initial) (using `lettrine` package)
 - Each chapter contains a [thumb index](https://en.wikipedia.org/wiki/Thumb_index) that displaces one after another chapter. The thumb indices extend to the bleeding margin of the page show the marks will show up after cut.
