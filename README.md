@@ -7,13 +7,14 @@ AFAIK, the University of Amsterdam (UvA) does not dictate a strict template for 
 - Title page conforming to the [requirement of UvA](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/appendix-b---model-title-page-for-doctoral-thesis-2018_27-09-2019.pdf). Again the title page will be provided by the Office of the Beadle once the these defense is scheduled. This version is only meant to replicate that with some customization in style (font size and color). You can just take their version and attach to the compiled pdf as post-production for the ease of mind.
 - Each chapter starts with an [epigraph](https://en.wikipedia.org/wiki/Epigraph_(literature))
 - Chapter abstracts begin with [initials, aka drop cap](https://en.wikipedia.org/wiki/Initial) (using `lettrine` package)
-- Each chapter contains a [thumb index](https://en.wikipedia.org/wiki/Thumb_index) that displaces one after another chapter. The thumb indices extend to the bleeding margin of the page show the marks will show up after cut.
+- Each chapter contains a [thumb index](https://en.wikipedia.org/wiki/Thumb_index) that displaces one after another chapter. The thumb indices extend to the bleeding margin of the page so that the marks will show up after the book is printed and cut.
 
 **Disclaimer**  Although the template has been used to format [my thesis](http://hdl.handle.net/11245.1/57c8d00a-9a32-4c96-a512-231dc6bb27df), it does not mean it always conforms to UvA regulations, especially when there are revisions. A certain elements that I'd seen from previous theses have been disapproved during my time. So always double check with the Office of the Beadle and the up-to-date [documents and forms](https://www.uva.nl/en/research/phd/documents-and-forms/documents-and-forms.html).
 
 ## Getting started
 This project is run and compiled from [Overleaf](overleaf.com) using XeLaTeX (due to the personalized fonts).
 It is highly recommended to use Overleaf to compile it. To activate XeLaTeX compiler in Overleaf, go to `Menu` (on the top-left corner of Overleaf), and change the compiler (see image).
+
 ![](xelatex.png)
 
 The following steps are copied from the [original repository](https://github.com/suchow/Dissertate) from which this template was customized.
