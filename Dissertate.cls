@@ -262,8 +262,8 @@ Numbers={Proportional}]{EB Garamond}
 
 % References.
 \renewcommand\bibname{References}
-% \usepackage[square,comma,numbers,sort&compress,doi=false,isbn=false,url=false]{natbib}
-\RequirePackage[comma,numbers]{natbib} % supper
+\RequirePackage[semicolon,sort&compress,doi=false,isbn=false,url=false]{natbib}
+%\RequirePackage[comma,numbers]{natbib} % supper
 \renewcommand{\bibnumfmt}[1]{[#1]}
 \RequirePackage[palatino]{quotchap}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-0.5\baselineskip}}
@@ -534,7 +534,8 @@ Numbers={Proportional}]{EB Garamond}
         \bibliography{my_bibs}
         \addcontentsline{toc}{chapter}{Bibliography}
         \pdfbookmark{Bibliography}{Bibliography}
-        \bibliographystyle{ieeetr}
+        %\bibliographystyle{ieeetr}
+	\bibliographystyle{abbrvnat}
     \end{spacing}
     
     \begin{appendices}
